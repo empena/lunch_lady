@@ -11,6 +11,7 @@ class SideDish
   end
 end
 
+
 sidedish1 = SideDish.new('Peas',"$1.00",1)
 sidedish2 = SideDish.new('Carrots',"$2.00",2)
 sidedish3 = SideDish.new('Salad',"$3.00",3)
