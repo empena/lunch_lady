@@ -61,40 +61,40 @@ class LunchLady
     end
   end
   
-    def order_side_dish1
-      puts "-----------------------------------------"
-      puts "Side Dishes - Choose ONE of the following"
-      puts "-----------------------------------------"
-      @side_dishes1.each do |food| puts "#{food[:dish]} --- #{food[:price]}"
-      end
-      sdish1 = gets.chomp
-      @dishes_ordered.push(sdish1)
-      order_side_dish2
+  def order_side_dish1
+    puts "-----------------------------------------"
+    puts "Side Dishes - Choose ONE of the following"
+    puts "-----------------------------------------"
+    @side_dishes1.each do |food| puts "#{food[:dish]} --- #{food[:price]}"
     end
+    sdish1 = gets.chomp
+    @dishes_ordered.push(sdish1)
+    order_side_dish2
+  end
 
-    def order_side_dish2
-      puts "-----------------------------------------"
-      puts "Side Dishes - Choose ONE of the following"
-      puts "-----------------------------------------"
-      @side_dishes2.each do |food| puts "#{food[:dish]} --- #{food[:price]}"
-      end
-      sdish2 = gets.chomp
-      @dishes_ordered.push(sdish2)
-      order_total
+  def order_side_dish2
+    puts "-----------------------------------------"
+    puts "Side Dishes - Choose ONE of the following"
+    puts "-----------------------------------------"
+    @side_dishes2.each do |food| puts "#{food[:dish]} --- #{food[:price]}"
     end
+    sdish2 = gets.chomp
+    @dishes_ordered.push(sdish2)
+    order_total
+  end
 
-    def order_total
-      puts "-------------------------"
-      puts "Your final order includes:"
-      puts "-------------------------"
-      @dishes_ordered.each do |dishes| puts @dishes_ordered
-      puts "-------------------------"
-      puts "Total price $15.00"
-      puts "-------------------------"
-      puts "Thanks for ordering!"
-      exit
-    end
-      LunchLady
+  def order_total
+    puts "-------------------------"
+    puts "Your final order includes:"
+    puts "-------------------------"
+    @dishes_ordered.each do |dishes| puts @dishes_ordered
+    puts "-------------------------"
+    puts "Total price $15.00"
+    puts "-------------------------"
+    puts "Thanks for ordering!"
+    exit
+  end
+    LunchLady
 end
 LunchLady
 LunchLady.new()
