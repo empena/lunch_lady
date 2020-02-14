@@ -1,7 +1,9 @@
 # lunch_lady
 
-## this is my first app
+## Lunch ordering application
 
-- it takes name
-- it shows menu item
-- it shows order
+App Functions:
+- The user chooses from a list of main dishes
+- The user chooses 2 side dish items
+- Computer repeats users order
+- Computer totals lunch items and displays total
